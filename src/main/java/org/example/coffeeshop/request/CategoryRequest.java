@@ -1,6 +1,6 @@
-package org.example.coffeeshop.entity;
+package org.example.coffeeshop.request;
 
-import jakarta.persistence.*;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,13 +9,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
 @Builder
-@Table(name = "category")
-public class Category {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class CategoryRequest {
     private Long id;
     private String name;
 }

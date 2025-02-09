@@ -1,21 +1,17 @@
-package org.example.coffeeshop.entity;
+package org.example.coffeeshop.request;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.example.coffeeshop.entity.UserType;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
 @Builder
-@Table(name = "user")
-public class User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class UserRequest {
     private Long id;
     private String name;
     private String surname;

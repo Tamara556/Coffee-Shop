@@ -1,30 +1,21 @@
-package org.example.coffeeshop.entity;
+package org.example.coffeeshop.request;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.example.coffeeshop.entity.Category;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
 @Builder
-@Table(name = "product")
-public class Product {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class ProductRequest {
     private Long id;
     private String name;
     private String description;
     private double price;
     private Long quantity;
-    @ManyToOne
     private Category category;
     private String image;
-
-
-
 }
