@@ -24,7 +24,4 @@ public class Product {
     @ManyToOne
     private Category category;
     private String image;
-
-
-
 }
