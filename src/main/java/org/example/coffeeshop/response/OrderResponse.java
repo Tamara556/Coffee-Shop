@@ -1,4 +1,4 @@
-package org.example.coffeeshop.dto;
+package org.example.coffeeshop.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,9 +12,8 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class OrderDto {
-
-    private int id;
+public class OrderResponse {
+    private Long id;
     private User user;
     private double price;
     private String status;

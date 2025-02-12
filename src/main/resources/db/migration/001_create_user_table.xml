@@ -19,7 +19,7 @@
             <column name="password" type="varchar(255)">
                 <constraints nullable="false"/>
             </column>
-            <column name="user_type" type="enum('ADMIN', 'USER')" defaultValue="USER"/>
+            <column name="user_type" type="varchar(255)" defaultValue="USER"/>
         </createTable>
 
     </changeSet>

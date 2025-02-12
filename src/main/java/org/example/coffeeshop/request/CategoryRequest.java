@@ -1,4 +1,4 @@
-package org.example.coffeeshop.dto;
+package org.example.coffeeshop.request;
 
 
 import lombok.AllArgsConstructor;
@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class CategoryDto {
 
-    private int id;
+public class CategoryRequest {
+    private Long id;
     private String name;
 }

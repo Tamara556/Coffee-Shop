@@ -1,6 +1,6 @@
-package org.example.coffeeshop.entity;
+package org.example.coffeeshop.response;
 
-import jakarta.persistence.*;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,13 +9,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
 @Builder
-@Table(name = "category")
-public class Category {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class UserResponse {
     private Long id;
     private String name;
+    private String surname;
+    private String email;
 }
