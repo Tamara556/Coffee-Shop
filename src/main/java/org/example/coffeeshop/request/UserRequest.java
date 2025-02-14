@@ -10,7 +10,6 @@ import org.example.coffeeshop.entity.UserType;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-
 public class UserRequest {
     private Long id;
     private String name;

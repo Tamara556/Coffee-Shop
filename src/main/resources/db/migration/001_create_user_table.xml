@@ -21,6 +21,5 @@
             </column>
             <column name="user_type" type="varchar(255)" defaultValue="USER"/>
         </createTable>
-
     </changeSet>
 </databaseChangeLog>

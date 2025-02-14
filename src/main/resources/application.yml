@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: Coffee-Shop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/coffee_shop
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:root}
+  liquibase:
+    change-log: classpath:/db/changelog.xml
