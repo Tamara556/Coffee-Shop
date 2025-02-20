@@ -25,9 +25,4 @@ public class Product {
     private Category category;
     @Column(name = "image_name")
     private String image;
-
-    public Product(Long id) {
-        this.id = id;
-
-    }
 }
