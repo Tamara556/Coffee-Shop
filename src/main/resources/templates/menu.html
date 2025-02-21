@@ -181,9 +181,9 @@
                      <th>price</th>
                  </tr>
                  <tr th:each="product : ${products}">
-                     <td th:text="${product.getName()}"></td>
-                     <td th:text="${product.getDescription()}"></td>
-                     <td th:text="${product.getPrice()}"></td>
+                     <td th:text="${product.name}"></td>
+                     <td th:text="${product.description}"></td>
+                     <td th:text="${product.price}"></td>
                  </tr>
              </table>
         </section>
@@ -206,14 +206,18 @@
                         <div class="col-lg-4 col-md-12" th:each="product : ${products}">
                             <div class="product mb-40">
                                 <div class="product__img">
-                                    <a href="shop-details"><img th:src="${product.getImage()}" alt=""></a>
+                                    <a th:href="@{/shop-details/{id}(id=${product.id})}">
+                                        <img th:src="@{/images/{image}(image=${product.image})}" alt="">
+                                    </a>
                                     <div class="product-action text-center">
                                     </div>
                                 </div>
                                 <div class="product__content pt-30">
-                                    <h4 class="pro-title"><a href="shop-details" th:text="${product.name}"></a></h4>
+                                    <h4 class="pro-title">
+                                        <a th:href="@{/shop-details/{id}(id=${product.id})}" th:text="${product.name}"></a>
+                                    </h4>
                                     <div class="price">
-                                        <span th:text="'$' + ${product.getPrice()}"></span>
+                                        <span th:text="'$' + ${product.price}"></span>
                                     </div>
                                 </div>
                             </div>
