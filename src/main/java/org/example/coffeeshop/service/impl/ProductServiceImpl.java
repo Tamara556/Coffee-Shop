@@ -1,6 +1,6 @@
-package org.example.coffeeshop.servise.impl;
+package org.example.coffeeshop.service.impl;
 
-import org.example.coffeeshop.servise.ProductService;
+import org.example.coffeeshop.service.ProductService;
 import org.springframework.stereotype.Service;
 
 @Service
