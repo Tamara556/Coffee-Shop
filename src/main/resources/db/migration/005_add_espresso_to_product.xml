@@ -1,0 +1,16 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="005_add_espresso_to_product" author="Tamara Murazyan">
+        <insert tableName="product">
+            <column name="name" value="Espresso"/>
+            <column name="description" value="A strong, black coffee brewed by forcing steam through ground coffee beans."/>
+            <column name="price" value="2.50"/>
+            <column name="quantity" value="100"/>
+            <column name="category_id" value="1"/>
+            <column name="image_name" value="espresso.jpg"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

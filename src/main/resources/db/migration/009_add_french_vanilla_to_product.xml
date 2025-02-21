@@ -1,0 +1,16 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="009_add_french_vanilla_to_product" author="Tamara Murazyan">
+        <insert tableName="product">
+            <column name="name" value="French Vanilla"/>
+            <column name="description" value="A more complex version of your classic vanilla coffee."/>
+            <column name="price" value="8.00"/>
+            <column name="quantity" value="10"/>
+            <column name="category_id" value="1"/>
+            <column name="image_name" value="french_vanilla.jpg"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,16 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="010_add_americano_to_product" author="Tamara Murazyan">
+        <insert tableName="product">
+            <column name="name" value="Americano"/>
+            <column name="description" value="A method of preparing coffee that involves combining a certain amount of hot water and espresso."/>
+            <column name="price" value="15.00"/>
+            <column name="quantity" value="21"/>
+            <column name="category_id" value="1"/>
+            <column name="image_name" value="americano.jpg"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
