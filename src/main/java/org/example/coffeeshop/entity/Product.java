@@ -23,5 +23,6 @@ public class Product {
     private Long quantity;
     @ManyToOne
     private Category category;
+    @Column(name = "image_name")
     private String image;
 }

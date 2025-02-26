@@ -20,13 +20,20 @@ public class SpringSecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
-                .csrf().disable()
-                .authorizeHttpRequests()
-                .requestMatchers("/users/register").permitAll()
-                .requestMatchers("/users/login").permitAll()
-                .requestMatchers("/css/**", "/js/**", "/images/**").permitAll()
-                .anyRequest().permitAll()
-                .and()
+                .csrf(csrf -> csrf.disable())
+                .authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/", "/**", "/users/register","/users/login", "/home", "/about", "/blog", "/blog-details", "/contact",
+                                "/faq", "/index", "/loginPage", "/menu", "/projects",
+                                "/services", "/shop", "/shop-details", "/single-service", "/team", "/css/**", "/js/**",
+                                "/img/**", "/webfonts/**", "/fonts/**", "/webfonts/**", "/comment/**", "/features/**",
+                                "/gallery/**", "/icon/**", "/images/**", "/logo/**", "/shop/**", "/slider", "/team/**", "/testimonial/**", "/static/**", "/bg")
+                        .permitAll()
+                        .anyRequest().authenticated()
+                )
+                .formLogin(login -> login
+                        .loginProcessingUrl("/login")
+                        .defaultSuccessUrl("/contact", true)
+                )
                 .build();
     }
 
@@ -42,4 +49,4 @@ public class SpringSecurityConfig {
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-}                                       
+}

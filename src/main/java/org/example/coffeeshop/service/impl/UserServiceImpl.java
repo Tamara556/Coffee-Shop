@@ -1,8 +1,10 @@
 package org.example.coffeeshop.service.impl;
+
 import lombok.RequiredArgsConstructor;
 import org.example.coffeeshop.entity.User;
 import org.example.coffeeshop.repository.UserRepository;
 import org.example.coffeeshop.service.UserService;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -11,14 +13,12 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
 
-    private final UserRepository userRepository;
+   private final UserRepository userRepository;
+   private final PasswordEncoder passwordEncoder;
 
     @Override
     public User save(User user) {
-        if (user == null) {
-            throw new IllegalArgumentException("User cannot be null");
-        }
-        // Additional field validations can be added here
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
         return userRepository.save(user);
     }
 
@@ -30,4 +30,3 @@ public class UserServiceImpl implements UserService {
 }
 
 
-                                                                                                   
