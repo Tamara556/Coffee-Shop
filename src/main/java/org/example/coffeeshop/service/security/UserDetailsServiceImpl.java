@@ -14,7 +14,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class UserDetailsServiceImpl implements UserDetailsService {
 
-private final UserService userService;
+    private final UserService userService;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -22,6 +22,6 @@ private final UserService userService;
         if (byEmail.isPresent()) {
             return new CurrentUser(byEmail.get());
         }
-        throw new UsernameNotFoundException("User with " +  username + " not found");
+        throw new UsernameNotFoundException("User with " + username + " not found");
     }
 }
