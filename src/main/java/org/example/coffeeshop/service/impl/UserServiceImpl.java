@@ -13,8 +13,8 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
 
-   private final UserRepository userRepository;
-   private final PasswordEncoder passwordEncoder;
+    private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
     @Override
     public User save(User user) {
@@ -26,7 +26,4 @@ public class UserServiceImpl implements UserService {
     public Optional<User> findByEmail(String email) {
         return userRepository.findByEmail(email);
     }
-
 }
-
-

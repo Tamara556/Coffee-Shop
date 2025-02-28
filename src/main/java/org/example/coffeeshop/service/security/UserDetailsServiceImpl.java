@@ -23,6 +23,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         if (byEmail.isPresent()) {
             return new CurrentUser(byEmail.get());
         }
-        throw new UsernameNotFoundException("User with " +  username + " not found");
+        throw new UsernameNotFoundException("User with " + username + " not found");
     }
 }
