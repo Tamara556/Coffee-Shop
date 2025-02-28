@@ -3,6 +3,7 @@ package org.example.coffeeshop.service.security;
 import lombok.RequiredArgsConstructor;
 import org.example.coffeeshop.entity.User;
 import org.example.coffeeshop.service.UserService;
+import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
