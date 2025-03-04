@@ -1,5 +1,6 @@
 package org.example.coffeeshop.controller;
 
+import lombok.RequiredArgsConstructor;
 import org.example.coffeeshop.mapper.ProductMapper;
 import org.example.coffeeshop.response.ProductResponse;
 import org.example.coffeeshop.service.ProductService;
@@ -12,14 +13,10 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/menu")
+@RequiredArgsConstructor
 public class MenuController {
     private final ProductService productService;
     private final ProductMapper productMapper;
-
-    public MenuController(ProductService productService, ProductMapper productMapper) {
-        this.productService = productService;
-        this.productMapper = productMapper;
-    }
 
     @GetMapping
     public String showMenu(Model model) {
