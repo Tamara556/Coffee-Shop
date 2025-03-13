@@ -1,11 +1,11 @@
 package org.example.coffeeshop.service.impl;
 
 import lombok.RequiredArgsConstructor;
-import org.example.coffeeshop.dto.RegisterUserRequestDto;
 import org.example.coffeeshop.entity.User;
 import org.example.coffeeshop.entity.UserType;
 import org.example.coffeeshop.mapper.UserMapper;
 import org.example.coffeeshop.repository.UserRepository;
+import org.example.coffeeshop.request.RegisterUserRequestDto;
 import org.example.coffeeshop.service.UserService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
