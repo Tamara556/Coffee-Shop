@@ -275,7 +275,6 @@
                                            placeholder="Your Email Address" value="" required="">
                                     <button type="submit" class="btn btn-custom" id="send2">Subscribe Now</button>
                                 </div>
-                                <!-- /Form-email -->
                             </form>
                         </div>
                     </div>
@@ -284,9 +283,9 @@
 
             <script>
                 document.getElementById('contact-form4').addEventListener('submit', function (event) {
-                    event.preventDefault(); // Prevent form submission
+                    event.preventDefault();
 
-                    const email = document.getElementById('email2').value;
+                    const email = document.getElementById('email2').value.trim();
 
                     if (email === "") {
                         alert("Please enter your email address.");
@@ -300,9 +299,10 @@
                         })
                             .then(response => {
                                 if (response.ok) {
-                                    window.location.href = "https://www.instagram.com/itspace_group/";  // Redirect if user exists
+                                    window.location.href = "https://www.instagram.com/itspace_group/";
                                 } else {
-                                    alert("User not found. Please register first.");  // Show error if not found
+                                    alert("User not found. Please register first.");
+                                    window.location.href = "/register";
                                 }
                             })
                             .catch(error => {

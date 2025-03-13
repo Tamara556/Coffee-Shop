@@ -20,6 +20,8 @@ public class EmailCheckController {
 
     @PostMapping("/check-email")
     public ResponseEntity<String> checkEmail(@RequestBody String email) {
+        email = email.replace("\"", "");
+
         Optional<User> existingUser = userRepository.findByEmail(email);
 
         if (existingUser.isPresent()) {

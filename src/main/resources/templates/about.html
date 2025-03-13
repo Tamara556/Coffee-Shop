@@ -348,8 +348,7 @@
                         <div class="col-xl-9 col-lg-9">
                             <div class="section-title center-align mb-40 text-center wow fadeInDown animated"
                                  data-animation="fadeInDown" data-delay=".4s">
-                                <h5><span class="circle-left"><img src="img/bg/circle-left.png" alt="img"></span>
-                                    Newsletter
+                                <h5><span class="circle-left"><img src="img/bg/circle-left.png" alt="img"></span> Newsletter
                                 </h5>
                                 <h2>
                                     Get Best Offers On The Coffee
@@ -362,7 +361,6 @@
                                            placeholder="Your Email Address" value="" required="">
                                     <button type="submit" class="btn btn-custom" id="send2">Subscribe Now</button>
                                 </div>
-                                <!-- /Form-email -->
                             </form>
                         </div>
                     </div>
@@ -371,9 +369,9 @@
 
             <script>
                 document.getElementById('contact-form4').addEventListener('submit', function (event) {
-                    event.preventDefault(); // Prevent form submission
+                    event.preventDefault();
 
-                    const email = document.getElementById('email2').value;
+                    const email = document.getElementById('email2').value.trim();
 
                     if (email === "") {
                         alert("Please enter your email address.");
@@ -387,9 +385,10 @@
                         })
                             .then(response => {
                                 if (response.ok) {
-                                    window.location.href = "https://www.instagram.com/itspace_group/";  // Redirect if user exists
+                                    window.location.href = "https://www.instagram.com/itspace_group/";
                                 } else {
-                                    alert("User not found. Please register first.");  // Show error if not found
+                                    alert("User not found. Please register first.");
+                                    window.location.href = "/register";
                                 }
                             })
                             .catch(error => {

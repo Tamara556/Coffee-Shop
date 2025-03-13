@@ -38,8 +38,10 @@
                             <li>
                                 <div class="header-social">
                                         <span>
-                                            <a href="https://www.facebook.com/ITSpaceAcademy/" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="https://www.instagram.com/itspace_group/" title="LinkedIn"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://www.facebook.com/ITSpaceAcademy/" title="Facebook"><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a href="https://www.instagram.com/itspace_group/" title="LinkedIn"><i
+                                                    class="fab fa-instagram"></i></a>
 
                                            </span>
                                     <!--  /social media icon redux -->
@@ -281,7 +283,6 @@
                                    placeholder="Your Email Address" value="" required="">
                             <button type="submit" class="btn btn-custom" id="send2">Subscribe Now</button>
                         </div>
-                        <!-- /Form-email -->
                     </form>
                 </div>
             </div>
@@ -290,9 +291,9 @@
 
     <script>
         document.getElementById('contact-form4').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent form submission
+            event.preventDefault();
 
-            const email = document.getElementById('email2').value;
+            const email = document.getElementById('email2').value.trim();
 
             if (email === "") {
                 alert("Please enter your email address.");
@@ -306,9 +307,10 @@
                 })
                     .then(response => {
                         if (response.ok) {
-                            window.location.href = "https://www.instagram.com/itspace_group/";  // Redirect if user exists
+                            window.location.href = "https://www.instagram.com/itspace_group/";
                         } else {
-                            alert("User not found. Please register first.");  // Show error if not found
+                            alert("User not found. Please register first.");
+                            window.location.href = "/register";
                         }
                     })
                     .catch(error => {
@@ -398,8 +400,10 @@
                 </div>
                 <div class="col-lg-6 text-right text-xl-right">
                     <div class="footer-social">
-                        <a href="https://www.facebook.com/ITSpaceAcademy/" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/itspace_group/" title="LinkedIn"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/ITSpaceAcademy/" title="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/itspace_group/" title="LinkedIn"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
 
