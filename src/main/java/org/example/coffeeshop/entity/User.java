@@ -16,10 +16,12 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
     private String name;
     private String surname;
     private String email;
     private String password;
+    private String ConfirmPassword;
+    @Enumerated(EnumType.STRING)
     private UserType userType;
 }

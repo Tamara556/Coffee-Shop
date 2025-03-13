@@ -284,11 +284,41 @@
                         <!-- /Form-email -->
                     </form>
                 </div>
-
             </div>
-
         </div>
     </section>
+
+    <script>
+        document.getElementById('contact-form4').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            const email = document.getElementById('email2').value;
+
+            if (email === "") {
+                alert("Please enter your email address.");
+            } else {
+                fetch('/api/check-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(email)
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            window.location.href = "https://www.instagram.com/itspace_group/";  // Redirect if user exists
+                        } else {
+                            alert("User not found. Please register first.");  // Show error if not found
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error checking email:", error);
+                        alert("An error occurred. Please try again.");
+                    });
+            }
+        });
+    </script>
+
     <!-- newslater-aread-end -->
 
 </main>
