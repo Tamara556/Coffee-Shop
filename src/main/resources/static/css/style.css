@@ -129,6 +129,7 @@ a:hover,
 .footer -menu li a:hover {
 	text-decoration: none;
 }
+
 .btn.focus, .btn:focus {
 	outline: 0;
 	box-shadow: none;
@@ -203,7 +204,7 @@ li {
 }
 p {
 
-	
+
 	margin-bottom: 15px;
 }
 hr {
@@ -256,6 +257,18 @@ label {
 	top: 0;
 	width: 100%;
 }
+.error-message {
+	color: red;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+
+.success-message {
+	color: green;
+	font-weight: bold;
+	margin-top: 10px;
+}
 .separator {
 	border-top: 1px solid #f2f2f2
 }
@@ -298,7 +311,7 @@ label {
   background: #52332b;
   top: 10PX;
   left: 10px;
-  z-index: -1;    
+	z-index: -1;
     transition: all 0.3s ease 0s;
     display: none;
 }
@@ -645,7 +658,7 @@ color: #52332b;
 .slider-content {
     position: relative;
     z-index: 2;
-   
+
 }
 .slider-bg .banner-img {
   overflow: hidden;
@@ -694,14 +707,14 @@ color: #52332b;
     z-index: 1;
     cursor: pointer;
     transition: .3s;
-    
+
 }
  .slider-active .slick-dots li.slick-active button {
     width: 50px;
    background: #52332b;
 }
 .slider-active .slick-dots li.slick-active button::before {
-  
+
     opacity: 1;
 }
 .slider-active .slick-dots li button::before {
@@ -880,7 +893,7 @@ z-index: 2;
     color: #52332b;
 }
 .header-three{
-    
+
 }
 .header-three .second-header {
   background: #52332b;
@@ -1086,7 +1099,8 @@ font-size: 16px;
 .cart-top li:last-child {
     border: none;
 }
-.call-box .icon {   
+
+.call-box .icon {
     display: inline-block;
 }
 .call-box li {
@@ -1727,7 +1741,7 @@ width: 50%;
 }
 .sr-ul li .text{
   font-size: 14px;
-  
+
   color: #52332b;
 }
 
@@ -1760,7 +1774,8 @@ width: 50%;
 .sr-tw-ul li .icon-right{
    width: 108px;
 }
-.sd-img 
+
+.sd-img
 {
     margin: 0 -50px;
 }
@@ -2207,7 +2222,7 @@ padding: 45px;
 border: none;
 margin-bottom: 30px;
 border-radius: 0;
-  
+
 }
 .services-two .s-single-services{
     float: left;
@@ -2249,7 +2264,7 @@ border-radius: 4px;
 border: 2px solid #F0F0F0;
 display: block;
 box-shadow: none;
-    
+
 }
 .services-three .s-single-services.active {
     background: #fff;
@@ -2380,9 +2395,10 @@ opacity:1;
 .services-hover:hover p{
    height: auto;
     width: auto;
-    
+
 }
-.services-hover:hover .services-icon{ 
+
+.services-hover:hover .services-icon {
    margin-top: 20px;
 }
 .second-services-content a {
@@ -2404,7 +2420,7 @@ opacity:1;
 .s-single-services.active .second-services-content h5{}
 .s-single-services.active .second-services-content a,#feature-top .s-single-services.active .btn2,.s-single-services.active .services-icon .glyph-icon::before{}
 .s-single-services.active .second-services-content p{
-   
+
 }
 .s-single-services.active .active-icon{display: block;}
 .s-single-services.active .d-active-icon{display: none;}
@@ -2551,7 +2567,7 @@ height: 40px;
     color:#777;
 }
 .services-content-02 .ss-btn2 span{
-   color: #52332b; 
+	color: #52332b;
     margin-left: -10px;
     font-weight: 600;
     opacity: 0;
@@ -2603,10 +2619,10 @@ transform: scale(1.08);
 }
 .services-box-04 .services-content-02 .blue li::before{
     color: #4cc3c1;
-} 
+}
 .services-box-04 .services-content-02 .green li::before{
     color: #2db065;
-} 
+}
 .services-05 h2{
     color: #fff;
 }
@@ -2662,7 +2678,7 @@ text-decoration: underline;
 }
 .services-box07 .sr-contner .text h5{
     font-size:25px;
-    
+
 }
 .services-box07 .sr-contner .text p{
     margin-top: 15px;
@@ -2719,7 +2735,7 @@ text-decoration: underline;
 .services-08 .bg-outer{
      background-color: #fff;
     -webkit-box-shadow: 0px 30px 40px 0px rgba(32, 85, 125, 0.06);
-    box-shadow: 0px 30px 40px 0px rgba(32, 85, 125, 0.06);    
+	box-shadow: 0px 30px 40px 0px rgba(32, 85, 125, 0.06);
 }
 .services-08 .col-lg-4.col-md-4{
     position: relative;
@@ -2755,7 +2771,7 @@ text-decoration: underline;
   -webkit-text-fill-color: #fff;
   font-size: 70px;
   font-weight: bold;
-    margin-bottom: 35px;    
+	margin-bottom: 35px;
 }
 .services-08-item:before {
     position: absolute;
@@ -3087,7 +3103,7 @@ border-radius: 50%;
 .video-img {
 	position: relative;
 	overflow: hidden;
-	z-index: 1;   
+	z-index: 1;
     height: 588px;
 }
 .video-img img{
@@ -3441,7 +3457,7 @@ height: 10px;
 width: 10px;
 border-radius: 2px;
 border: none;
-    
+
 }
  .team-active .slick-dots li.slick-active button {
 }
@@ -3957,7 +3973,7 @@ z-index: -1;
  padding:60px 40px 25px;
     float: left;
     position: relative;
-    
+
 }
 .class-content h4{
     font-size: 26px;
@@ -4560,7 +4576,7 @@ overflow: hidden;
 }
 
 .faq-wrap .card:last-child {
-    
+
 }
 .faq-wrap .card-header h2 button::after {
 position: absolute;
@@ -4613,7 +4629,7 @@ color: #fff;
     cursor: pointer;
     background: no-repeat;
     transition: .3s;
-    
+
 }
  .home-blog-active .slick-dots li.slick-active button {
 }
@@ -5369,7 +5385,7 @@ color: #926d63;
 
 /* meal */
 .populer-meal ul {
-    
+
 }
 .populer-meal li {
     display: inline-block;
@@ -5448,8 +5464,8 @@ color: #926d63;
 }
 
 .footer-top-heiding {
-    
-    margin-bottom: 50px;
+
+	margin-bottom: 50px;
 }
 .footer-top-heiding .container{
     padding-bottom: 50px;
@@ -5527,7 +5543,8 @@ text-align: center;
 line-height: 40px;
 color: #fff !important;
 }
-.footer-social a:hover{    
+
+.footer-social a:hover {
   background: #52332b;
     color: #fff !important;
 }
@@ -5797,7 +5814,7 @@ padding-left: 0;
     margin: 15px;
 }
 .gallery-image:hover figcaption {
-   opacity: 1;	
+	opacity: 1;
     bottom:30px;
 
 }
@@ -5975,8 +5992,8 @@ top: 121px;
 .has-mega-menu{
         position:static;
     }
-	 
-    li.has-sub.has-mega-menu ul{
+
+li.has-sub.has-mega-menu ul{
         position: absolute;
         top: NNpx; /*insert the needed value*/
         z-index: 100;
@@ -5995,20 +6012,20 @@ top: 121px;
     /*flexbox fallback for browsers that do not support CSS GRID lyout*/
         display: flex;
         flex-wrap: wrap;
-    /*CSS GRID lyout*/ 
+		/*CSS GRID lyout*/
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(25%, 1fr));   
+		grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
 		margin-left: -820px;
-		
-    }
+
+	}
 	li.has-sub.has-mega-menu:hover>ul>li>ul{
     /*flexbox fallback for browsers that do not support CSS GRID lyout*/
         display: flex;
         flex-wrap: wrap;
 width: auto;
 background:none;
-    /*CSS GRID lyout*/ 
-        display: grid;       
+		/*CSS GRID lyout*/
+		display: grid;
 		position: relative;
 border: none;
 margin-left:0;
@@ -6789,10 +6806,10 @@ pre cite {
 /* Here's the new CSS to add... */
 
 .admin-bar .menu-area {
-   
+
 }
 .admin-bar .second-header {
-  
+
 }
 .admin-bar .sticky-menu {
   top: 32px;
@@ -6880,8 +6897,8 @@ pre cite {
   color: #52332b;
   font-size: 14px;
   letter-spacing: 2px;
-  
-  text-transform: uppercase;
+
+	text-transform: uppercase;
 }
 
 .pro-title {
@@ -7997,7 +8014,7 @@ margin-bottom: 30px;
 .services-categories li{
 	position:relative;
 	border:1px solid #e7e7e7;
-    margin-bottom: 15px;    
+	margin-bottom: 15px;
 	z-index: 1;
 }
 
@@ -8204,7 +8221,7 @@ transition: 0.3s;
 }
 
 
-/*** 
+/***
 
 ====================================================================
 		Service Detail
@@ -8297,7 +8314,7 @@ transition: 0.3s;
 
 .service-detail .prod-tabs .tab-btns{
 	position:relative;
-	z-index:1;	
+	z-index: 1;
 	border-bottom:1px solid #dddddd;
 }
 
@@ -8380,7 +8397,7 @@ transition: 0.3s;
 }
 
 .service-detail .prod-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display: block;
 }
 
 .service-detail .prod-tabs .tabs-content .tab .content{
@@ -8416,7 +8433,7 @@ transition: 0.3s;
     font-family: "Font Awesome 5 Pro";
 }
 
-/*** 
+/***
 
 ====================================================================
 		Project Detail
@@ -8432,7 +8449,7 @@ transition: 0.3s;
 .project-detail .upper-box{
 	position: relative;
 	margin-bottom: 40px;
-} 
+}
 
 .project-detail .upper-box .image{
 	position: relative;
@@ -8617,13 +8634,13 @@ display: inline-block;
 .project-detail .project-info li p{
 	font-size: 15px;
     line-height: 24px;
-    
-    font-weight: 400;
+
+	font-weight: 400;
     margin-bottom: 0;
 }
 
 .project-detail .project-info li p a{
-	
+
 	display: inline-block;
 	-webkit-transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
@@ -8886,7 +8903,7 @@ display: inline-block;
 
 .case-study-box:hover .case-study-content02 .ss-btn{
   display: inline-block;
-} 
+}
 .case-study-box .case-study-content02{
     transition: all 0.5s ease 0s;
 }
@@ -8962,7 +8979,7 @@ font-weight: 600;
 margin: 0px 0 15px;
 color: #fff;
 font-family: 'Caudex', serif;
-    
+
 }
 .skill-bar {
 height: 15px;
@@ -9592,7 +9609,7 @@ color: #101010;
 	font-size: 16px;
 	margin-bottom: 1px;
 	padding-right: 15px;
-	
+
 }
 .widget__post-content h6:hover a {
 	color:#52332b;
@@ -9636,7 +9653,7 @@ color: #101010;
 }
 .widget__banner-overly > span {
 	font-size: 14px;
-	
+
 	text-transform: uppercase;
 	color: #ffffff;
 	letter-spacing: 2px;
@@ -9647,7 +9664,7 @@ color: #101010;
 	color: #ffffff;
 	font-size: 40px;
 	margin-bottom: 129px;
-	
+
 }
 .widget__banner-overly h3 span {
 	display: block;
@@ -9812,7 +9829,7 @@ border-top: 2px solid #f5f5f5;
 	text-transform: uppercase;
 	border: 2px solid #e5e5e5;
 	padding: 7px 10px;
-	
+
 	display: inline-block;
 	border-radius: 3px;
 	color: #9d9d9d;
@@ -9826,7 +9843,7 @@ border-top: 2px solid #f5f5f5;
 .post__share h5 {
 	font-size: 18px;
 	margin-bottom: 30px;
-	
+
 }
 .post__share ul li {
 	margin-left: 20px;
@@ -9847,7 +9864,7 @@ border-top: 2px solid #f5f5f5;
 .posts_navigation .prev-link span {
     font-size: 12px;
     text-transform: uppercase;
-	
+
 	display: block;
 	letter-spacing: 2px;
 	margin-bottom: 15px;
@@ -9855,7 +9872,7 @@ border-top: 2px solid #f5f5f5;
 .posts_navigation .prev-link h4 {
 	font-size: 22px;
 	margin-bottom: 0;
-	
+
 	text-transform: capitalize;
 	height: 30px;
 overflow: hidden;
@@ -9897,7 +9914,7 @@ overflow: hidden;
 .posts_navigation .next-link span {
     font-size: 12px;
 	margin-bottom: 15px;
-	
+
 	display: block;
     text-transform: uppercase;
 	letter-spacing: 2px;
@@ -9905,7 +9922,7 @@ overflow: hidden;
 .posts_navigation .next-link h4 {
     font-size: 22px;
 	margin-bottom: 0;
-	
+
 	height: 30px;
 overflow: hidden;
 }
@@ -9918,7 +9935,7 @@ overflow: hidden;
 .related__post .post-title h4 {
 	font-size: 26px;
 	margin-bottom: 0;
-	
+
 }
 .related-post-wrap .post-thumb img {
   	width: 100%;
@@ -9931,7 +9948,7 @@ overflow: hidden;
 .related-post-wrap .rp__content h3 {
 	font-size: 24px;
 	margin-bottom: 20px;
-	
+
 	line-height: 1.4;
 }
 .related-post-wrap .rp__content h3:hover a {
@@ -9958,7 +9975,7 @@ overflow: hidden;
 .avatar__info h5 {
 	font-size: 26px;
 	margin-bottom: 10px;
-	
+
 }
 .avatar__info-social {
   	margin-bottom: 20px;
@@ -9999,7 +10016,7 @@ figcaption{
 .comment__wrap-title h5 {
 	font-size: 26px;
 	margin-bottom: 0;
-	
+
 }
 .single__comment .comments-avatar {
 	float: left;
@@ -10023,7 +10040,7 @@ figcaption{
 .comment-text .avatar-name h6 {
 	font-size: 22px;
 	margin-bottom: 7px;
-	
+
 }
 .comment-text .avatar-name h6 i
 {
@@ -10039,7 +10056,7 @@ margin-left: 20px;
 
 .comment-text .avatar-name span {
 	font-size: 12px;
-	
+
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: #52332b;
@@ -10075,7 +10092,7 @@ margin-left: 20px;
 .comments-title {
     font-size: 22px;
     margin-bottom: 0;
-    
+
 }
 .comment-reply-title {
     font-size: 20px;
@@ -10196,7 +10213,7 @@ border-radius: 5px;
 }
 
 .single-post .footer-widget{
-  
+
 }
 figure.aligncenter img {
     margin-bottom: 15px;
@@ -10740,21 +10757,21 @@ font-weight: 500;
 padding: 0 5px;
 }
 .booking-area h2{
-    color: #fff; 
+	color: #fff;
 }
 .booking-area h5{
-    color: #fff; 
+	color: #fff;
     text-transform: uppercase;
 }
 .booking-area p{
-    color: #fff; 
+	color: #fff;
 }
 .booking-content-box a{
-    color: #fff; 
+	color: #fff;
     border-bottom: 5px solid #fff;
     margin-top: 15px;
     display: inline-block;
-    padding-bottom: 5px; 
+	padding-bottom: 5px;
 }
 
 .booking-contact-box {
@@ -10802,7 +10819,7 @@ padding: 0 5px;
     z-index: 2;
 	float: left;
 	color: #62605c;
-	
+
 }
 .wpding .footer-widget li:hover{
 	color: #faa292;
