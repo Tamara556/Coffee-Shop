@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 @Builder
-@Table(name = "user")
+@Table(name = "users")
 public class User {
 
     @Id
@@ -21,7 +21,6 @@ public class User {
     private String surname;
     private String email;
     private String password;
-    private String ConfirmPassword;
     @Enumerated(EnumType.STRING)
     private UserType userType;
 }

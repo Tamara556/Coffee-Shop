@@ -9,4 +9,4 @@ import org.mapstruct.Mapper;
 public interface ProductMapper {
     ProductResponse toResponse(Product product);
     Product toEntity(ProductRequest productRequest);
-    }
+}

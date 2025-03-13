@@ -1,0 +1,17 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="005_alert_user_table" author="AGevorgyan">
+
+        <renameTable oldTableName="user" newTableName="users"/>
+
+        <modifyDataType tableName="users" columnName="name" newDataType="varchar(255)"/>
+        <modifyDataType tableName="users" columnName="surname" newDataType="varchar(255)"/>
+
+        <dropNotNullConstraint tableName="users" columnName="name"/>
+        <dropNotNullConstraint tableName="users" columnName="surname"/>
+
+    </changeSet>
+
+</databaseChangeLog>
