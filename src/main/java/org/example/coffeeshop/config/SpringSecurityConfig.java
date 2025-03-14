@@ -7,7 +7,6 @@ import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
@@ -23,7 +22,7 @@ public class SpringSecurityConfig {
         return http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/", "/**", "/users/register","/users/login", "/home", "/about", "/blog", "/blog-details", "/contact",
+                        .requestMatchers("/", "/**", "/register",  "/users/login", "/home", "/about", "/blog", "/blog-details", "/contact",
                                 "/faq", "/index", "/loginPage", "/menu", "/projects",
                                 "/services", "/shop", "/shop-details", "/single-service", "/team", "/css/**", "/js/**",
                                 "/img/**", "/webfonts/**", "/fonts/**", "/webfonts/**", "/comment/**", "/features/**",
